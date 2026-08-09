@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Formatações Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #F5E1F5;
+}
+
+/* Cabeçalho da Página*/
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #F2C5EA;
+    width: 100%;
+}
+
+/* Formatação Título */
+.cabecalho-titulo {
+    height: auto;
+    padding: 15px 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    color: #3B2416;
+    font-size: 83px;
+    
+    font-family: 'League Spartan', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.2em;
+}
+
+/* Formatação Subtítulo */
+.cabechalho-subTitulo {
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 5px 55px 10px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 43px;
+    color: #3B2416;
+
+    font-family: 'League Spartan', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.3em;
+}
+
+/* Formatação Lista de opções do menu */
+.cabecalho-menu-lista {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-size: 35px;
+
+    font-family: "Allura", cursive;
+
+    border-top: 0.1px solid #3B2416;
+}
+
+.cabecalho-menu-lista-item-link {
+    color: #3B2416;
+}
+
+.cabecalho-menu-lista-item-link:hover {
+    background-color: #F5E1F5;
+    border-radius: 20px;
+    
+    padding: 0 10px;
+}
+
+/* Conteúdo Principal */
+
+.conteudo-principal-secao {
+    width: 100%;
+    height: auto;
+
+    border-top: 0.1px solid #3B2416;
+}
+
+.conteudo-principal-botao-link {
+    width: 350px;
+    height: 100px;
+
+    background-color: #C37A8E;
+    color: #ffffff;
+    margin: 0 0 0 0;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    font-size: 32px; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-principal-botao-link:hover {
+    color: #3B2416;
+    background-color: #F2C5EA;
+}
+
+.links-de-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    margin: 45px 0 0 0;
+}
