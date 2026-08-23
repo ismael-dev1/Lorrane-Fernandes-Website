@@ -1,0 +1,31 @@
+Página institucional da Escritora Lorrane Fernandes
+
+Cores do site:
+	Rosa: #f2c5ea
+	Lavanda pálida: #F5E1F5
+	Preto padrão
+	Branco
+	Roxo: #D8B4F8
+
+Fontes: ...
+Cor da Fonte: Marrom escuro: #3B2416
+
+
+
+
+
+1. Cabeçalho
+- Logo da escritora
+- Título com o nome da cliente
+- Subtítulo com o a descrição do que ela é
+- Menu de navegação com os links: Início, Sobre, Livros, Contato
+
+2. Hero Section
+- Fundo Lavanda Pálida
+- Imagem da capa do livro centralizado
+- Linha
+- Título com o nome do livro centralizado em baixo da capa do livro
+- Citação de frase de impacto retirada do livro
+- Botão de "saiba mais" logo abaixo
+- Linha
+- Link "Ler prólogo"

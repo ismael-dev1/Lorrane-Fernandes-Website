@@ -1,0 +1,13 @@
+Cores do site:
+
+&#x09;Rosa: #F2C5EA
+
+&#x09;Lavanda pálida: #F5E1F5
+
+&#x09;Preto: #000000
+
+&#x09;Branco #FFFFFF
+
+&#x09;Roxo: #D8B4F8
+
+&#x09;Marrom escuro: #3B2416

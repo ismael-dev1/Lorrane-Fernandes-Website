@@ -1,204 +1,265 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Formatações Padrão */
+/* Default global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 100%;
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
     background-color: #F5E1F5;
 }
 
-/* Cabeçalho da Página*/
-
-/* Cabeçalho */
-.cabecalho {
+/* HEADER */
+.header {
     background-color: #F2C5EA;
     width: 100%;
-}
-
-/* Formatação Título */
-.cabecalho-titulo {
     height: auto;
-    padding: 15px 0 0 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    color: #3B2416;
-    font-size: 83px;
-    
-    font-family: 'League Spartan', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.2em;
 }
 
-/* Formatação Subtítulo */
-.cabechalho-subTitulo {
-    height: auto;
-    padding: 0 0 0 0;
-    margin: 5px 55px 10px 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    font-size: 43px;
-    color: #3B2416;
-
-    font-family: 'League Spartan', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.3em;
-}
-
-/* Formatação Lista de opções do menu */
-.cabecalho-menu-lista {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    font-size: 35px;
-
-    font-family: "Allura", cursive;
-
-    border-top: 0.1px solid #3B2416;
-}
-
-.cabecalho-menu-lista-item-link {
-    color: #3B2416;
-}
-
-.cabecalho-menu-lista-item-link:hover {
-    background-color: #F5E1F5;
-    border-radius: 20px;
-    
-    padding: 0 10px;
-}
-
-/* Conteúdo Principal */
-
-.conteudo-principal-secao-um {
+/* Headings */
+.headings {
     width: 100%;
     height: auto;
 
-    border-top: 0.1px solid #3B2416;
+    display: flex;
+    flex-direction: row;
+    /* main-axis */
+    justify-content: center;
+
+    color: #3B2416;
+    font-family: 'League Spartan';
+    text-transform: uppercase;
+}
+
+/* Heading 1 */
+.heading-1 {
+    padding-top: 1.5rem;
+
+    font-size: 8.3rem;
+    font-weight: 300;
+
+    letter-spacing: 1.6rem;
+}
+
+/* Heading 2 */
+.heading-2 {
+    font-size: 4.3rem;
+    font-weight: 200;
+
+    letter-spacing: 1.29rem;
+}
+
+/* Link's list */
+.header-menu .links-list {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    /* main-axis */
+    justify-content: space-around;
+    /* cross-axis */
+    align-items: center;
+
+    font-size: 3.5rem;
+
+    border-top: 0.01rem solid #3B2416;
+}
+
+.header-menu .links-list .list-item .items-link {
+    color: #3B2416;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+}
+
+.header-menu .links-list .list-item .items-link:hover {
+    background-color: #F5E1F5;
+    border-radius: 20px;
+
+    padding: 0 1rem;
+}
+
+
+
+
+/* ============================MAIN CONTENT======================== */
+
+.books-card {
+    width: 100%;
+    height: auto;
+
+    border-top: 0.01rem solid #3B2416;
 
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    /* main-axis */
+    align-items: center;
 }
 
-.conteudo-principal-imagem {
-    width: 350px;
-    height: 488px;
-    
-    margin: 36px 0 0 0;
+.books-cover {
+    width: 35rem;
+    height: 48.8rem;
+
+    margin-top: 3.6rem;
 }
 
-.conteudo-principal-titulo {
-    margin: 32px 0 0 0;
+.books-card .text {
+    display: flex;
+    flex-direction: column;
+    /* main-axis */
+    align-items: center;
+}
+
+.main-content .text .title {
+    margin-top: 2.3rem;
 
     color: #3B2416;
 
-    font-size: 60px;
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
+    font-size: 6rem;
+    font-family: "Cormorant Garamond", serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
-    
 }
 
-.linha-I {
-    border: 0.1px solid black;
+.division-line {
+    border: 0.01rem solid black;
     background-color: #3B2416;
-    width: 239px;
+    width: 23.9rem;
 }
 
-.conteudo-principal-citacao {
-    margin: 21px 0 0 0;
+.authors-quote {
+    margin-top: 2rem;
 
     color: #3B2416;
 
-    font-size: 32px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
+    font-size: 3.2rem;
+    font-family: "Playfair Display", serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: italic;
-    
 }
 
-.conteudo-principal-botao-link {
-    width: 279px;
-    height: 40px;
+.know-more-link {
+    width: 27.9rem;
+    height: auto;
 
     background-color: #C37A8E;
     color: #ffffff;
-    margin: 13px 0 0 0;
-    border: 1px solid black;
+    margin-top: 1.3rem;
+    border: 0.1rem solid black;
     border-radius: 20px;
 
-    font-size: 32px; 
+    font-size: 3.2rem;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 
     display: flex;
     flex-direction: column;
+    /* main-axis */
     align-items: center;
+    /* cross-axis */
     justify-content: center;
 }
 
-.conteudo-principal-botao-link:hover {
+.know-more-link:hover {
     color: #3B2416;
     background-color: #F2C5EA;
 }
 
-.linha-II {
-    margin-top: 25px;
-    border: 0.1px solid black;
-    background-color: #3B2416;
-    width: 239px;
+.dl-2 {
+    margin-top: 2.5rem;
 }
 
-.conteudo-principal-link-prologo {
-    margin: 35px 0 0 0;
-    padding: 0 23px 0 23px;
+.prologues-link {
+    margin: 2.5rem 0 2.5rem 0;
+    padding: 0 2.3rem 0.5rem 2.3rem;
 
-    width: 196px;
-    height: 41px;
-    
+    width: 19.6rem;
+    height: auto;
+
     color: #ffffff;
     background-color: #C37A8E;
     border: 1px solid black;
     border-radius: 55px;
 
-    font-size: 28px;
+    font-size: 2.8rem;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-.conteudo-principal-link-prologo:hover {
+.prologues-link:hover {
     color: #3B2416;
     background-color: #F2C5EA;
 }
 
+
+/* Media queries - mobile */
+
+@media screen and (max-width: 480px) {
+    .heading-1 {
+        font-size: 4.15rem;
+        font-weight: 300;
+
+        text-align: center;
+    }
+
+    /* Heading 2 */
+    .heading-2 {
+        padding-top: 0.5rem;
+
+        font-size: 2.15rem;
+        letter-spacing: 1.29rem;
+    }
+
+
+    /* Link's list */
+    .header-menu .links-list {
+        font-size: 1.75rem;
+    }
+
+    .books-cover {
+        width: 35rem;
+        height: 38rem;
+
+        margin-top: 3.6rem;
+    }
+
+    .main-content .text .title {
+        font-size: 3rem;
+    }
+
+    .division-line {
+        width: 11.95rem;
+    }
+
+    .authors-quote {
+        font-size: 1.6rem;
+    }
+
+    .know-more-link {
+        width: 13.95rem;
+        height: auto;
+
+        font-size: 1.6rem;
+    }
+
+    .prologues-link {
+        width: 13.95rem;
+        height: auto;
+
+        font-size: 1.6rem;
+    }
+}
