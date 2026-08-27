@@ -16,12 +16,12 @@ html {
 
 body {
     width: 100%;
-    height: auto;
+    height: 100vh;
     font-size: 1.6rem;
     background-color: #F5E1F5;
 }
 
-/* HEADER */
+/*===HEADER===*/
 .header {
     background-color: #F2C5EA;
     width: 100%;
@@ -61,6 +61,8 @@ body {
     letter-spacing: 1.29rem;
 }
 
+/*===MENU/NAV LINKS===*/
+
 /* Link's list */
 .header-menu .links-list {
     width: 100%;
@@ -91,10 +93,7 @@ body {
     padding: 0 1rem;
 }
 
-
-
-
-/* ============================MAIN CONTENT======================== */
+/*===MAIN CONTENT===*/
 
 .books-card {
     width: 100%;
@@ -207,7 +206,6 @@ body {
 
 
 /* Media queries - mobile */
-
 @media screen and (max-width: 480px) {
     .heading-1 {
         font-size: 4.15rem;

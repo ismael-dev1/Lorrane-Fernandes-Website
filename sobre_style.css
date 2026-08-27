@@ -7,127 +7,183 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 100%;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
     background-color: #F5E1F5;
 }
 
-/* Cabeçalho da Página*/
-
-/* Cabeçalho */
-.cabecalho {
+/*===HEADER===*/
+.header {
     background-color: #F2C5EA;
     width: 100%;
+    height: auto;
 }
 
-/* Formatação Título */
-.cabecalho-titulo {
+/* Headings */
+.headings {
+    width: 100%;
     height: auto;
-    padding: 15px 0 0 0;
 
     display: flex;
     flex-direction: row;
+    /* main-axis */
     justify-content: center;
 
     color: #3B2416;
-    font-size: 83px;
-    
-    font-family: 'League Spartan', sans-serif;
-    font-optical-sizing: auto;
+    font-family: 'League Spartan';
+    text-transform: uppercase;
+}
+
+/* Heading 1 */
+.heading-1 {
+    padding-top: 1.5rem;
+
+    font-size: 8.3rem;
     font-weight: 300;
-    font-style: normal;
 
-    text-transform: uppercase;
-
-    letter-spacing: 0.2em;
+    letter-spacing: 1.6rem;
 }
 
-/* Formatação Subtítulo */
-.cabechalho-subTitulo {
+/* Heading 2 */
+.heading-2 {
+    font-size: 4.3rem;
+    font-weight: 200;
+
+    letter-spacing: 1.29rem;
+}
+
+/*===MENU/NAV LINKS===*/
+
+/* Link's list */
+.header-menu .links-list {
+    width: 100%;
     height: auto;
-    padding: 0 0 0 0;
-    margin: 5px 55px 10px 0;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    font-size: 43px;
-    color: #3B2416;
-
-    font-family: 'League Spartan', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.3em;
-}
-
-/* Formatação Lista de opções do menu */
-.cabecalho-menu-lista {
-
-    display: flex;
+    /* main-axis */
     justify-content: space-around;
+    /* cross-axis */
     align-items: center;
-    
-    font-size: 35px;
 
-    font-family: "Allura", cursive;
+    font-size: 3.5rem;
 
-    border-top: 0.1px solid #3B2416;
+    border-top: 0.01rem solid #3B2416;
 }
 
-.cabecalho-menu-lista-item-link {
+.header-menu .links-list .list-item .items-link {
     color: #3B2416;
+    font-family: "Allura", cursive;
+    font-weight: 400;
 }
 
-.cabecalho-menu-lista-item-link:hover {
+.header-menu .links-list .list-item .items-link:hover {
     background-color: #F5E1F5;
     border-radius: 20px;
-    
-    padding: 0 10px;
+
+    padding: 0 1rem;
 }
 
-/* Conteúdo Principal */
-
+/*===MAIN CONTENT===*/
 main {
     border-top: 0.1px solid #3B2416;
 }
 
-.conteudo-principal-secao {
+.about-card {
     width: 100%;
+    height: auto;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
 .conteudo-principal-imagem {
-    margin: 25px 0 0 25px;
-    width: 626px;
-    height: 617px;
+    width: 62.6rem;
+    height: 61.7rem;
+    border-radius: 25px;
+    margin: 2.5rem 0 0 2.5rem;
 
     display: block;
 }
 
-.conteudo-principal-prologo {
-    margin: 25px 0 0 37px;
-    width: 500px;
-    height: 617px;
+.prologue {
+    margin: 2.5rem 0 0 3.7rem;
+    width: 50rem;
+    height: auto;
 
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
+    font-family: "Cormorant Garamond";
     font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
+    font-size: 3rem;
 
     text-align: left;
-    line-height: normal;
-    vertical-align: top;
-    line-height: 36px;
+    line-height: 3.6rem;
     line-break: auto;
+}
+
+
+/* Media queries - mobile */
+@media screen and (max-width: 480px) {
+    .heading-1 {
+        font-size: 4.15rem;
+        font-weight: 300;
+
+        text-align: center;
+    }
+
+    /* Heading 2 */
+    .heading-2 {
+        padding-top: 0.5rem;
+
+        font-size: 2.15rem;
+        letter-spacing: 1.29rem;
+    }
+
+
+    /* Link's list */
+    .header-menu .links-list {
+        font-size: 1.75rem;
+    }
+
+    .about-card {
+        display: flex;
+        flex-direction: column;
+        /* main-axis */
+        align-items: center;
+    }
+
+    .conteudo-principal-imagem {
+        width: 40rem;
+        height: 30rem;
+        border-radius: 25px;
+        margin: 1.7rem auto 0 auto;
+        display: block;
+    }
+
+    .prologue {
+        width: 40rem;
+        height: auto;
+        margin: 1.7rem auto 0 auto;
+
+        font-family: "Cormorant Garamond";
+        font-weight: 400;
+        font-size: 2rem;
+
+        text-align: justify;
+        line-height: 100%;
+        line-break: auto;
+    }
+
+    /* Quando um site tem várias página, geralmente se cria um único arquivo .css e nele se escreve as regras gerais que servem para elementos que se repetem como por exemplo um menu e posteriormente regras específicas para elementos específicos, todos no mesmo arquivo, né? ou não? 
+    
+    "Sim, essa é uma prática muito comum e totalmente válida, principalmente para sites pequenos e médios. Centralizar o CSS em um único arquivo facilita a manutenção das páginas que compartilham a mesma estrutura." */
 }
