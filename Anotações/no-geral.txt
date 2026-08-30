@@ -1,0 +1,9 @@
+./, ../ e / (De onde eu sei que uma única barra indica partir da pasta raíz?) 
+
+Quando um site tem várias páginas, geralmente se cria um único arquivo .css e nele se escreve as regras gerais que servem para elementos que se repetem como por exemplo um menu e posteriormente regras específicas para elementos específicos, todos no mesmo arquivo, né? ou não? 
+    
+"Sim, essa é uma prática muito comum e totalmente válida, principalmente para sites pequenos e médios. Centralizar o CSS em um único arquivo facilita a manutenção das páginas que compartilham a mesma estrutura."
+
+Atributo aria-label no elemento "nav" no geral, mas, especificamente no nav da página "contatos"
+
+Mudar o nome dos arquivos, fazer melhorias na página "saiba mais", principalmente a aplicação de media queries.

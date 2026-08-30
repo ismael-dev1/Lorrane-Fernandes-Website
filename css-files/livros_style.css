@@ -1,0 +1,28 @@
+/* main-content */ 
+.main-content {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 25rem;
+}
+
+.text {
+    width: auto;
+    height: auto;
+
+    color: #3B2416;
+    font-size: 25rem;
+    font-family: "Cormorant Garamond";
+    font-weight: 400;
+    font-style: normal;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* media query - mobile */
+@media screen and (max-width: 480px) {
+    .text {
+        font-size: 7rem;
+    }
+}
