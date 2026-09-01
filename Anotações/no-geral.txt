@@ -7,3 +7,5 @@ Quando um site tem várias páginas, geralmente se cria um único arquivo .css e
 Atributo aria-label no elemento "nav" no geral, mas, especificamente no nav da página "contatos"
 
 Mudar o nome dos arquivos, fazer melhorias na página "saiba mais", principalmente a aplicação de media queries.
+
+Colocar index.html e index.css na pasta root para fazer o deploy apropriadamente
