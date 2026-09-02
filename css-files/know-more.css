@@ -10,6 +10,13 @@
 }
 
 /* general styles */
+.book-cover {
+    width: 35rem;
+    height: 48.8rem;
+    margin-top: 7.5rem;
+    margin-right: 5.2rem;
+}
+
 .top-line {
     margin-top: 2.5rem;
     border: 0.1px solid black;
@@ -24,34 +31,26 @@
     width: 23.9rem;
 }
 
-
-/* Physical book */
-.book-cover-1 {
+.link-area {
     width: 35rem;
-    height: 48.8rem;
+    height: auto;
 
-    margin: 7.5rem 5.2rem 0 0;
-}
-
-.pb-link-area {
-    width: 35rem;
     display: flex;
     flex-direction: column;
+    /* main-axis */
     align-items: center;
 }
 
-.pb-button {
+.book-link {
+    background-color: #C37A8E;
     width: 27.9rem;
     height: 4rem;
 
-    margin-top: 5.3rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 1.3rem;
 
-    background-color: #C37A8E;
     color: #fff;
-    margin-top: 1.3rem;
-    border: 1px solid black;
-    border-radius: 20px;
-
     font-size: 3.2rem;
     font-family: "Montserrat";
     font-weight: 400;
@@ -63,54 +62,28 @@
     align-items: center;
     /* cross-axis */
     justify-content: center;
+
 }
 
-.pb-button:hover {
+.book-link:hover {
     color: #3B2416;
     background-color: #F2C5EA;
 }
 
+@media screen and (max-width: 480px) {
+    .books-versions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* main-axis */
+        /* align-items: center; */
+    }
 
+    .physical-book {
+        background-color: lightblue;
+    }
 
-
-/* E-book */
-.book-cover-2 {
-    width: 35rem;
-    height: 48.8rem;
-    margin-top: 7.6rem;
-}
-
-.e-book-link-area {
-    display: flex;
-    flex-direction: column;
-    /* main-axis */
-    align-items: center;
-}
-
-.e-book-button {
-    width: 27.9rem;
-    height: 4rem;
-
-    background-color: #C37A8E;
-    color: #ffffff;
-    margin-top: 1.3rem;
-    border: 1px solid black;
-    border-radius: 20px;
-
-    font-size: 3.2rem;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-style: normal;
-
-    display: flex;
-    flex-direction: column;
-    /* main-axis */
-    align-items: center;
-    /* cross-axis */
-    justify-content: center;
-}
-
-.e-book-button:hover {
-    color: #3B2416;
-    background-color: #F2C5EA;
+    .e-book {
+        background-color: lightcoral;
+    }
 }
