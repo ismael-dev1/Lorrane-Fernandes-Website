@@ -72,18 +72,25 @@
 
 @media screen and (max-width: 480px) {
     .books-versions {
-        width: 100%;
         display: flex;
+        /* current main-axis */
         flex-direction: column;
-        /* main-axis */
-        /* align-items: center; */
     }
 
-    .physical-book {
-        background-color: lightblue;
+    .book-card {
+        display: flex;
+        /* current main-axis */
+        flex-direction: column;
+        /* cross-axis */
+        align-items: center;
     }
 
-    .e-book {
-        background-color: lightcoral;
+    .book-cover {
+        margin-top: 6rem;
+        margin-right: 0;
+    }
+
+    .e-book .link-area {
+        margin-bottom: 1rem;
     }
 }
