@@ -1,8 +1,41 @@
+/* Importando a fonte hospedada localmente */
+
+/* monteserrat-semibold */
+@font-face {
+    /* Nome da fonte local no arquivo */
+    font-family: 'montserrat-semibold';
+    /* Caminho */
+    src: url('/assets/fonts/montserrat/montserrat-semibold/montserrat-semibold.ttf')
+        /* Identificador de formato de arquivo */
+        format('truetype');
+}
+
+/* montserrat-regular */
+@font-face {
+    /* Nome da fonte local no arquivo */
+    font-family: 'montserrat-regular';
+    /* Caminho */
+    src: url('/assets/fonts/montserrat/montserrat-regular/montserrat-regular.ttf')
+        /* Identificador de formato de arquivo */
+        format('truetype');
+}
+
 /*===HEADER===*/
 .header {
     background-color: #F2C5EA;
     width: 100%;
     height: auto;
+}
+
+.logo {
+    width: 20rem;
+    height: auto;
+
+    top: 2.5rem;
+    left: 16rem;
+
+    display: block;
+    position: absolute;
 }
 
 /* Headings */
@@ -16,26 +49,28 @@
     justify-content: center;
 
     color: #3B2416;
-    font-family: 'League Spartan';
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Heading 1 */
 .heading-1 {
-    padding-top: 1.5rem;
+    padding-top: 6.679rem;
 
-    font-size: 8.3rem;
-    font-weight: 300;
+    font-family: 'montserrat-semibold';
+    font-size: 6rem;
 
     letter-spacing: 1.6rem;
 }
 
 /* Heading 2 */
 .heading-2 {
-    font-size: 4.3rem;
-    font-weight: 200;
+    margin-bottom: 4rem;
 
-    letter-spacing: 1.29rem;
+    font-size: 3rem;
+    font-family: 'montserrat-regular';
+
+    letter-spacing: 1.5rem;
 }
 
 /*===MENU/NAV LINKS===*/
@@ -75,19 +110,41 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+    .headings {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        /* main-axis */
+        justify-content: center;
+    }
+
+    .logo {
+        width: 6rem;
+        height: auto;
+
+        top: 1rem;
+        left: 22rem;
+
+        display: block;
+        position: absolute;
+    }
+
     /* Heading 1 */
     .heading-1 {
-        font-size: 4.15rem;
-        font-weight: 300;
+        font-size: 2.2rem;
 
-        text-align: center;
+        letter-spacing: 1.15rem;
     }
 
     /* Heading 2 */
     .heading-2 {
         padding-top: 0.5rem;
 
-        font-size: 2.15rem;
+        margin-bottom: 1.5rem;
+
+        font-size: 1rem;
         letter-spacing: 1.29rem;
     }
 

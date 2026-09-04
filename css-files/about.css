@@ -42,8 +42,10 @@
     }
 
     .conteudo-principal-imagem {
+        background-color: lightblue;
         width: 40rem;
-        height: 30rem;
+        /* A altura do conteúdo era menor do que o mínimo necessário para que ele alcance a borda da figura; por isso o border-radius não está sendo aplicado na imagem */
+        height: auto;
         border-radius: 25px;
         margin: 1.7rem auto 0 auto;
         display: block;
@@ -52,7 +54,7 @@
     .about-the-author {
         width: 35rem;
         height: auto;
-        margin: 1.7rem auto 0 auto;
+        margin: 1.7rem auto 1.5rem auto;
 
         font-family: "Cormorant Garamond";
         font-weight: 400;
