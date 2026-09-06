@@ -8,13 +8,12 @@
     justify-content: flex-start;
 }
 
-.conteudo-principal-imagem {
+.authors-image {
+    display: block;
     width: 62.6rem;
     height: 61.7rem;
     border-radius: 25px;
     margin: 2.5rem 0 0 2.5rem;
-
-    display: block;
 }
 
 .about-the-author {
@@ -39,22 +38,22 @@
         flex-direction: column;
         /* main-axis */
         align-items: center;
+        /* cross-axis */
+        align-items: center;
     }
 
-    .conteudo-principal-imagem {
-        background-color: lightblue;
-        width: 40rem;
+    .authors-image {
+        width: 35rem;
         /* A altura do conteúdo era menor do que o mínimo necessário para que ele alcance a borda da figura; por isso o border-radius não está sendo aplicado na imagem */
         height: auto;
         border-radius: 25px;
         margin: 1.7rem auto 0 auto;
-        display: block;
     }
 
     .about-the-author {
         width: 35rem;
         height: auto;
-        margin: 1.7rem auto 1.5rem auto;
+        margin: 1.7rem auto 1.7rem auto;
 
         font-family: "Cormorant Garamond";
         font-weight: 400;

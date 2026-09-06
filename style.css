@@ -29,7 +29,7 @@
     color: #3B2416;
 
     font-size: 6rem;
-    font-family: "Cormorant Garamond", serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Cormorant Garamond";
     font-weight: 400;
     font-style: normal;
 }
@@ -46,7 +46,7 @@
     color: #3B2416;
 
     font-size: 3.2rem;
-    font-family: "Playfair Display", serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Playfair Display";
     font-weight: 400;
     font-style: italic;
 }
@@ -85,10 +85,15 @@
 
 .prologues-link {
     margin: 2.5rem 0 2.5rem 0;
-    padding: 0 2.3rem 0.5rem 2.3rem;
+    padding: 0.3rem 2.3rem 0.5rem 2.3rem;
 
     width: 19.6rem;
     height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     color: #ffffff;
     background-color: #C37A8E;
@@ -124,19 +129,25 @@
         width: 11.95rem;
     }
 
+    .main-content .text .title {
+        font-size: 4rem;
+    }
+
     .authors-quote {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .know-more-link {
-        width: 13.95rem;
+        width: 16rem;
         height: auto;
 
-        font-size: 1.6rem;
+        padding: 0.5rem 2.3rem 0.5rem 2.3rem;
+
+        font-size: 1.8rem;
     }
 
     .prologues-link {
-        width: 13.95rem;
+        width: 14rem;
         height: auto;
 
         font-size: 1.6rem;

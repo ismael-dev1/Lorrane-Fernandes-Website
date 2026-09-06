@@ -27,15 +27,28 @@
     height: auto;
 }
 
-.logo {
-    width: 20rem;
+.visual-content {
+    width: 100%;
     height: auto;
 
-    top: 2.5rem;
-    left: 16rem;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    display: block;
+.logo-container {
+    /* background-color: white; */
+
+    top: 30px;
+    left: 180px;
     position: absolute;
+}
+
+.logo {
+    display: block;
+    width: 20rem;
+    height: auto;
 }
 
 /* Headings */
@@ -55,7 +68,10 @@
 
 /* Heading 1 */
 .heading-1 {
-    padding-top: 6.679rem;
+    /* background-color: rebeccapurple; */
+    /* color: #fff; */
+
+    margin-top: 6.679rem;
 
     font-family: 'montserrat-semibold';
     font-size: 6rem;
@@ -65,7 +81,8 @@
 
 /* Heading 2 */
 .heading-2 {
-    margin-bottom: 4rem;
+    /* background-color: green;
+    color: #fff; */
 
     font-size: 3rem;
     font-family: 'montserrat-regular';
@@ -79,6 +96,8 @@
 .header-menu .links-list {
     width: 100%;
     height: auto;
+
+    margin-top: 4rem;
 
     display: flex;
     flex-direction: row;
@@ -94,8 +113,7 @@
 
 .header-menu .links-list .list-item .items-link {
     color: #3B2416;
-    font-family: "Allura", cursive;
-    font-weight: 400;
+    font-family: "Allura";
 }
 
 .header-menu .links-list .list-item .items-link:hover {
@@ -110,46 +128,52 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    .headings {
-        width: 100%;
-        height: auto;
-
+    .visual-content {
+        /* background-color: lightblue; */
         display: flex;
-        flex-direction: row;
-        /* main-axis */
-        justify-content: center;
+    }
+
+    .titles {
+        /* background-color: yellow; */
+        padding: 5px;
+    }
+
+    .logo-container {
+        /* background-color: white; */
+
+        top: 6px;
+        left: 10px;
+        /* position: absolute; */
     }
 
     .logo {
-        width: 6rem;
-        height: auto;
-
-        top: 1rem;
-        left: 22rem;
-
         display: block;
-        position: absolute;
+        width: 5rem;
+        height: auto;
     }
 
     /* Heading 1 */
     .heading-1 {
         font-size: 2.2rem;
 
-        letter-spacing: 1.15rem;
+        margin-top: 0;
+
+        letter-spacing: 0.4rem;
     }
 
     /* Heading 2 */
     .heading-2 {
         padding-top: 0.5rem;
 
-        margin-bottom: 1.5rem;
+        margin-bottom: 0;
 
         font-size: 1rem;
-        letter-spacing: 1.29rem;
+        letter-spacing: 0.3rem;
     }
 
     /* Link's list */
     .header-menu .links-list {
+        margin-top: 0rem;
         font-size: 3rem;
     }
 }

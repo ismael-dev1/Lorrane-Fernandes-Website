@@ -44,7 +44,7 @@
 .book-link {
     background-color: #C37A8E;
     width: 27.9rem;
-    height: 4rem;
+    height: auto;
 
     border: 1px solid black;
     border-radius: 20px;
@@ -71,6 +71,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .book-cover {
+        width: 30rem;
+        height: auto;
+
+        margin-top: 3.6rem;
+    }
+
     .books-versions {
         display: flex;
         /* current main-axis */
@@ -90,7 +97,22 @@
         margin-right: 0;
     }
 
+    .top-line {
+        width: 20rem;
+    }
+
+    .bottom-line {
+        width: 20rem;
+    }
+
     .e-book .link-area {
         margin-bottom: 1rem;
+    }
+
+    .book-link {
+        width: 25rem;
+        height: auto;
+        
+        font-size: 2.7rem;
     }
 }
