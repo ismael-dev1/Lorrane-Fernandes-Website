@@ -130,22 +130,20 @@ main {
 
 @media screen and (max-width: 480px) {
     .visual-content {
-        /* background-color: lightblue; */
         display: flex;
     }
 
     .titles {
-        /* background-color: yellow; */
         padding: 5px;
     }
 
     .logo-container {
-        top: 6px;
+        background-color: #fff;
+        top: 5px;
         left: 10px;
     }
 
     .logo {
-        /* background-color: wheat; */
         display: block;
         width: 5rem;
         height: auto;
@@ -153,6 +151,9 @@ main {
 
     /* Heading 1 */
     .heading-1 {
+        background-color: #fff;
+        margin-left: 10px;
+        
         font-size: 2.2rem;
 
         margin-top: 0;
